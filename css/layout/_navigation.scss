@@ -18,6 +18,16 @@
     text-align: center;
     cursor: pointer;
 
+    @include respond(tab-port) {
+      top: 4rem;
+      right: 4rem;
+    }
+    @include respond(phone) {
+      top: 3.5rem;
+      right: 3.5rem;
+    }
+
+
   }
 
   &__background {
@@ -31,10 +41,17 @@
                     $color-primary-light,
                     $color-primary-dark);
     z-index: 1000;
-    //transform: scale(80);
 
-    transition: transform .8s;
+    @include respond(tab-port) {
+      top: 4.5rem;
+      right: 4.5rem;
+    }
+    @include respond(phone) {
+      top: 3.5rem;
+      right: 3.5rem;
+    }
   }
+
   &__nav {
     height: 100vh;
     position: fixed;
